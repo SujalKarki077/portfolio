@@ -1,0 +1,56 @@
+
+		body {
+			background-color: white; /* Light blue */
+			font-family: Arial, sans-serif;
+			color: #000;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			text-align: center;
+			padding: 20px;
+			color: white;
+			background-color: #4682B4; /* Steel blue */
+		}
+
+		nav {
+			background-color: #1E90FF;
+			text-align: center;
+			padding: 10px 0;
+		}
+
+		nav a {
+			color: white;
+			text-decoration: none;
+			margin: 0 15px;
+			font-weight: bold;
+		}
+
+		nav a:hover {
+			text-decoration: underline;
+		}
+
+		table {
+			width: 80%;
+			margin: 30px auto;
+			border-collapse: collapse;
+			background-color: white;
+			box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		}
+
+		th, td {
+			padding: 15px;
+			border: 1px solid #ccc;
+			text-align: center;
+		}
+
+		th {
+			background-color: #4682B4;
+			color: white;
+		}
+
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+	

@@ -4,45 +4,60 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Contact</title>
+	<link rel="stylesheet" href="assets/contactstyle.css">
 </head>
 <body>
-<h1> welcome to my profile </h1>
+	<h1>Welcome to my profile</h1>
 
-<a href="index.html">home</a>
-<a href="interest.html">interest</a>
-<a href="gallery.html">gallery</a>
-<a href="friends.html">friends</a>
-<a href="contact.html">contact</a>
-<a href="htown.html">h-town</a>
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="interest.html">Interest</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="friends.html">Friends</a>
+		<a href="contact.html">Contact</a>
+		<a href="htown.html">H-Town</a>
+	</nav>
 
-<h3>Contact Me</h3>
-<form>
-	<fieldset>
-		<legend>Please Enter Your Details</legend>
-	<label>Full Name:</label>
-	<input type="text" name="full name"><br>
-	<label>Phone Number:</label>
-	<input type="Number" name="phone"><br>
-	<label>Gender:</label>
-	<input type="radio" name="Gender">Male
-	<input type="radio" name="Gender">Female
-	<input type="radio" name="Gender">Others<br>
-	<label>Country:</label>
-	<select>
-		<option>Nepal</option>
-		<option>India</option>
-		<option>China</option>
-	</select><br>
+	<h3>Contact Me</h3>
 
-	<label>Education:</label>
-	<select>
-		<option>SEE Passed</option>
-		<option>+2 Passed</option>
-		<option>Bachlore</option>
-		<option>Masters</option>
-	</select>
-  
-    </fieldset>
-</form>
+	<form action="https://formspree.io/f/mnnvpekq" method="POST">
+		<fieldset>
+			<legend>Please Enter Your Details</legend>
+
+			<label>Full Name:</label><br>
+			<input type="text" name="full name" required><br><br>
+
+			<label>Email:</label><br>
+			<input type="email" name="email" required><br><br>
+
+			<label>Phone Number:</label><br>
+			<input type="tel" name="phone" required><br><br>
+
+			<label>Gender:</label><br>
+			<input type="radio" name="gender" value="Male"> Male
+			<input type="radio" name="gender" value="Female"> Female
+			<input type="radio" name="gender" value="Others"> Others<br><br>
+
+			<label>Country:</label><br>
+			<select name="country">
+				<option>Nepal</option>
+				<option>India</option>
+				<option>China</option>
+			</select><br><br>
+
+			<label>Education:</label><br>
+			<select name="education">
+				<option>SEE Passed</option>
+				<option>+2 Passed</option>
+				<option>Bachelor</option>
+				<option>Masters</option>
+			</select><br><br>
+
+			<label>Message:</label><br>
+			<textarea name="message" rows="5" cols="30" required></textarea><br><br>
+
+			<button type="submit">Send Message</button>
+		</fieldset>
+	</form>
 </body>
 </html>

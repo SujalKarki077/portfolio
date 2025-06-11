@@ -171,3 +171,55 @@ footer {
   font-size: 0.9rem;
   border-radius: 15px 15px 0 0;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 5%;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  #about {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .profile-image img {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+
+  .btn-hire {
+    width: 100%;
+    padding: 14px 0;
+  }
+
+  section#projects,
+  section#contact {
+    padding: 30px 5%;
+  }
+
+  section#projects h2,
+  section#contact h2 {
+    font-size: 1.5rem;
+  }
+
+  #about h2 {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
